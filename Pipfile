@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+"aniso8601" = "==3.0.2"
+click = "==7.0"
+flask-restplus = "==0.12.1"
+itsdangerous = "==0.24"
+jsonschema = "==2.6.0"
+pytz = "==2018.5"
+six = "==1.11.0"
+Flask = "==1.0.2"
+"Jinja2" = "==2.10"
+MarkupSafe = "==1.0"
+Werkzeug = "==0.14.1"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+runserver = python app.py
