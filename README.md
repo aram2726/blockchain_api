@@ -19,3 +19,6 @@ $ mkdir blockchain && cd blockchain
 $ pipenv install
 $ echo { "id": 1, "name": "string", "amount": 10, "to_whom": "string", "hash": ""} > 1
 ```
+
+* License
+[MIT](https://github.com/alkhachatryan/spyonspies/blob/master/LICENSE "MIT")
