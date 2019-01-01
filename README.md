@@ -21,4 +21,4 @@ $ echo { "id": 1, "name": "string", "amount": 10, "to_whom": "string", "hash": "
 ```
 
 * License
-[MIT](https://github.com/alkhachatryan/spyonspies/blob/master/LICENSE "MIT")
+[MIT](https://github.com/aram2726/blockchain_api/blob/master/LICENSE "MIT")
