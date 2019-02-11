@@ -12,8 +12,7 @@ $ pip3 install --user pipenv
 $ echo "PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
 ```
 
-* create a GENESIS block in blockchain directory
- and name it as 1
+* create a GENESIS block in blockchain directory and name it as 1
 ```bash
 $ mkdir blockchain && cd blockchain
 $ pipenv install
