@@ -1,8 +1,7 @@
 import os
 import hashlib
 
-BLOCKCHAIN_DIR = os.path.join(os.curdir, "blockchain/")
-
+BLOCKCHAIN_DIR = os.path.join(os.path.dirname(__file__), "blockchain/")
 
 def get_blockchain_files():
     files = os.listdir(BLOCKCHAIN_DIR)

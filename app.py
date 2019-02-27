@@ -30,11 +30,12 @@ class BlockchainList(Resource):
         return DAO.create(api.payload), 201
 
 
-@namespace.route('/<int:id>')
+@namespace.route('/<int:pk>')
 @namespace.response(404, 'block not found')
-@namespace.param('id', 'The task identifier')
+@namespace.param('pk', 'The task identifier')
 class Blockchain(Resource):
     """Show a single block item and lets you delete them"""
+
     @namespace.doc('get_block')
     @namespace.marshal_with(block)
     def get(self, pk):
@@ -51,7 +52,7 @@ class Blockchain(Resource):
     @namespace.expect(block)
     @namespace.marshal_with(block)
     def put(self, pk):
-        """Update a task given its identifier"""
+        """Update block given its identifier"""
         return DAO.update(pk, api.payload)
 
 

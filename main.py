@@ -61,7 +61,7 @@ def edit_block(pk, name, amount, to_whom, _hash):
         "id": pk,
         "name": name,
         "amount": amount,
-        "to_whome": to_whom,
+        "to_whom": to_whom,
         "hash": _hash
     }
 

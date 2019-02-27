@@ -19,7 +19,7 @@ MarkupSafe = "==1.0"
 Werkzeug = "==0.14.1"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
 
 [scripts]
 server = "python3 app.py"

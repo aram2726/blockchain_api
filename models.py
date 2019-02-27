@@ -1,17 +1,8 @@
-from flask import Flask
+from api_defination import *
 
-from flask_restplus import Api, fields
+from flask_restplus import fields
 
 from main import get_block, write_block, remove_block
-
-app = Flask(__name__)
-
-
-api = Api(
-    app, version='1.0', title='Blockchain API',
-    description='A simple Blockchain API',
-)
-
 
 block = api.model('Blockchain', {
     'id': fields.Integer(readonly=True, description='Unique identifier'),
@@ -36,11 +27,10 @@ class BlockchainDAO:
     def get(pk):
         try:
             return get_block(pk)
-        except ValueError:
+        except (ValueError, TypeError):
             return api.abort(404, "block {} doesn't exist".format(pk))
 
     def create(self, data):
-        print(data)
         _block = data
         _block['id'] = self.counter + 1
         self.blocks.append(_block)
