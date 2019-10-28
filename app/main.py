@@ -1,7 +1,7 @@
 import os
 import json
 
-from utils import (
+from .utils import (
     BLOCKCHAIN_DIR, get_blockchain_files, get_blockchain_file, get_hash
 )
 

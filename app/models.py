@@ -1,8 +1,7 @@
-from api_defination import *
-
 from flask_restplus import fields
 
-from main import get_block, write_block, remove_block
+from .api_defination import *
+from .main import get_block, write_block, remove_block
 
 block = api.model('Blockchain', {
     'id': fields.Integer(readonly=True, description='Unique identifier'),
