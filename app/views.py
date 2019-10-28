@@ -19,14 +19,14 @@ class BlockchainList(Resource):
     @namespace.doc('list_blocks')
     @namespace.marshal_list_with(status)
     def get(self):
-        """List all tasks"""
+        """List all blocks"""
         return check_compatibility()
 
     @namespace.doc('create_block')
     @namespace.expect(block)
     @namespace.marshal_with(block, code=201)
     def post(self):
-        """Create a new task"""
+        """Create a new block"""
         return DAO.create(api.payload), 201
 
 
